@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Manuel Araniva\\Documents\\Ciclo 02 2024\\DSE\\Laboratorio\\Desafio2_DSE_AV200751_MR200114\\APIUsuarios\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1090B596-61F4-4F2E-9988-EC77FADD6BFC}|..\\APIUsuarios.Test2\\APIUsuarios.Test2.csproj|c:\\users\\manuel araniva\\documents\\ciclo 02 2024\\dse\\laboratorio\\desafio2_dse_av200751_mr200114\\apiusuarios.test2\\permisoscontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9697B10-7751-4BCE-83BA-09FBE243B5FE}|APIUsuarios.csproj|c:\\users\\manuel araniva\\documents\\ciclo 02 2024\\dse\\laboratorio\\desafio2_dse_av200751_mr200114\\apiusuarios\\controllers\\permisoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9697B10-7751-4BCE-83BA-09FBE243B5FE}|APIUsuarios.csproj|solutionrelative:controllers\\permisoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9697B10-7751-4BCE-83BA-09FBE243B5FE}|APIUsuarios.csproj|c:\\users\\manuel araniva\\documents\\ciclo 02 2024\\dse\\laboratorio\\desafio2_dse_av200751_mr200114\\apiusuarios\\models\\usuariosdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9697B10-7751-4BCE-83BA-09FBE243B5FE}|APIUsuarios.csproj|solutionrelative:models\\usuariosdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 15,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UsuariosDBContext.cs",
+              "DocumentMoniker": "C:\\Users\\Manuel Araniva\\Documents\\Ciclo 02 2024\\DSE\\Laboratorio\\Desafio2_DSE_AV200751_MR200114\\APIUsuarios\\Models\\UsuariosDBContext.cs",
+              "RelativeDocumentMoniker": "Models\\UsuariosDBContext.cs",
+              "ToolTip": "C:\\Users\\Manuel Araniva\\Documents\\Ciclo 02 2024\\DSE\\Laboratorio\\Desafio2_DSE_AV200751_MR200114\\APIUsuarios\\Models\\UsuariosDBContext.cs",
+              "RelativeToolTip": "Models\\UsuariosDBContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T20:53:54.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PermisosController.cs",
+              "DocumentMoniker": "C:\\Users\\Manuel Araniva\\Documents\\Ciclo 02 2024\\DSE\\Laboratorio\\Desafio2_DSE_AV200751_MR200114\\APIUsuarios\\Controllers\\PermisosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PermisosController.cs",
+              "ToolTip": "C:\\Users\\Manuel Araniva\\Documents\\Ciclo 02 2024\\DSE\\Laboratorio\\Desafio2_DSE_AV200751_MR200114\\APIUsuarios\\Controllers\\PermisosController.cs",
+              "RelativeToolTip": "Controllers\\PermisosController.cs",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAnwF4AAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T03:00:51.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PermisosControllerTest.cs",
+              "DocumentMoniker": "C:\\Users\\Manuel Araniva\\Documents\\Ciclo 02 2024\\DSE\\Laboratorio\\Desafio2_DSE_AV200751_MR200114\\APIUsuarios.Test2\\PermisosControllerTest.cs",
+              "RelativeDocumentMoniker": "..\\APIUsuarios.Test2\\PermisosControllerTest.cs",
+              "ToolTip": "C:\\Users\\Manuel Araniva\\Documents\\Ciclo 02 2024\\DSE\\Laboratorio\\Desafio2_DSE_AV200751_MR200114\\APIUsuarios.Test2\\PermisosControllerTest.cs",
+              "RelativeToolTip": "..\\APIUsuarios.Test2\\PermisosControllerTest.cs",
+              "ViewState": "AQIAAJ0AAAAAAAAAAAAYwLQAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T18:12:17.192Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
