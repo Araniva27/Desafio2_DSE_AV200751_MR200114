@@ -44,6 +44,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Ocelot": {
+              "target": "Package",
+              "version": "[23.3.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

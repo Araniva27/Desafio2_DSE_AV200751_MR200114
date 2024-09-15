@@ -104,6 +104,11 @@ namespace APIUsuarios.Controllers
             try
             {
                 await _context.SaveChangesAsync();
+                var db = _redis.GetDatabase();
+                string cacheKeyPermiso = "permiso_" + id.ToString();
+                string cacheKeyList = "permisoList";
+                await db.KeyDeleteAsync(cacheKeyPermiso);
+                await db.KeyDeleteAsync(cacheKeyList);
             }
             catch (DbUpdateConcurrencyException)
             {
@@ -125,20 +130,26 @@ namespace APIUsuarios.Controllers
         [HttpPost]
         public async Task<ActionResult<PermisoT>> PostPermisoT(PermisoT permisoT)
         {
-            if (string.IsNullOrEmpty(permisoT.Nombre))
-            {
-                return BadRequest("The Nombre field is required.");
-            }
-
-            if (permisoT.Nombre.Length < 3 || permisoT.Nombre.Length > 50)
-            {
-                return BadRequest("El campo Nombre debe tener entre 3 y 50 caracteres.");
-            }
-
             _context.PermisosT.Add(permisoT);
             await _context.SaveChangesAsync();
+            var db = _redis.GetDatabase();
+            string cacheKeyList = "permisoList";
+            await db.KeyDeleteAsync(cacheKeyList);
+            return CreatedAtAction("GetPermisoT", new { id = permisoT.PermisoId }, permisoT);
+            //if (string.IsNullOrEmpty(permisoT.Nombre))
+            //{
+            //    return BadRequest("The Nombre field is required.");
+            //}
 
-            return CreatedAtAction(nameof(GetPermisoT), new { id = permisoT.PermisoId }, permisoT);
+            //if (permisoT.Nombre.Length < 3 || permisoT.Nombre.Length > 50)
+            //{
+            //    return BadRequest("El campo Nombre debe tener entre 3 y 50 caracteres.");
+            //}
+
+            //_context.PermisosT.Add(permisoT);
+            //await _context.SaveChangesAsync();
+
+            //return CreatedAtAction(nameof(GetPermisoT), new { id = permisoT.PermisoId }, permisoT);
             //return CreatedAtAction("GetPermisoT", new { id = permisoT.PermisoId }, permisoT);
         }
 
@@ -154,8 +165,15 @@ namespace APIUsuarios.Controllers
 
             _context.PermisosT.Remove(permisoT);
             await _context.SaveChangesAsync();
-
+            var db = _redis.GetDatabase();
+            string cacheKeyPermiso = "permiso_" + id.ToString();
+            string cacheKeyList = "permisoList";
+            await db.KeyDeleteAsync(cacheKeyPermiso);
+            await db.KeyDeleteAsync(cacheKeyList);
             return NoContent();
+            //await _context.SaveChangesAsync();
+
+            //return NoContent();
         }
 
         private bool PermisoTExists(int id)

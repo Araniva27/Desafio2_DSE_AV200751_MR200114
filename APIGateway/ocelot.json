@@ -1,0 +1,123 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/Permisos",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7267
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Permisos",
+      "UpstreamhttpsMethod": [ "Get", "Post", "Put", "Delete" ],
+      "SwaggerKey": "Permisos"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Permisos/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7267
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Permisos/{id}",
+      "UpstreamhttpsMethod": [ "Get", "Put", "Delete" ],
+      "SwaggerKey": "Permisos"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Roles",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7267
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Roles",
+      "UpstreamhttpsMethod": [ "Get", "Post", "Put", "Delete" ],
+      "SwaggerKey": "Roles"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Roles/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7267
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Roles/{id}",
+      "UpstreamhttpsMethod": [ "Get", "Put", "Delete" ],
+      "SwaggerKey": "Roles"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Usuarios",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7267
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Usuarios",
+      "UpstreamhttpsMethod": [ "Get", "Post", "Put", "Delete" ],
+      "SwaggerKey": "Usuarios"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Usuarios/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7267
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Usuarios/{id}",
+      "UpstreamhttpsMethod": [ "Get", "Put", "Delete" ],
+      "SwaggerKey": "Usuarios"
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:7115"
+  },
+  "SwaggerEndPoints": [
+    {
+      "Key": "Permisos",
+      "Config": [
+        {
+          "Name": "Permisos API",
+          "Scheme": "https",
+          "Host": "localhost",
+          "Port": 7267,
+          "Path": "/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "Roles",
+      "Config": [
+        {
+          "Name": "Roles API",
+          "Scheme": "https",
+          "Host": "localhost",
+          "Port": 7267,
+          "Path": "/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "Usuarios",
+      "Config": [
+        {
+          "Name": "Usuarios API",
+          "Scheme": "https",
+          "Host": "localhost",
+          "Port": 7267,
+          "Path": "/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ]
+}

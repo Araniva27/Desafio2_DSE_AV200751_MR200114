@@ -24,3 +24,16 @@ C:\Users\Manuel Araniva\Documents\Ciclo 02 2024\DSE\Laboratorio\Desafio2_DSE_AV2
 C:\Users\Manuel Araniva\Documents\Ciclo 02 2024\DSE\Laboratorio\Desafio2_DSE_AV200751_MR200114\APIGateway\obj\Debug\net8.0\APIGateway.pdb
 C:\Users\Manuel Araniva\Documents\Ciclo 02 2024\DSE\Laboratorio\Desafio2_DSE_AV200751_MR200114\APIGateway\obj\Debug\net8.0\APIGateway.genruntimeconfig.cache
 C:\Users\Manuel Araniva\Documents\Ciclo 02 2024\DSE\Laboratorio\Desafio2_DSE_AV200751_MR200114\APIGateway\obj\Debug\net8.0\ref\APIGateway.dll
+C:\Users\Manuel Araniva\Documents\Ciclo 02 2024\DSE\Laboratorio\Desafio2_DSE_AV200751_MR200114\APIGateway\bin\Debug\net8.0\ocelot.json
+C:\Users\Manuel Araniva\Documents\Ciclo 02 2024\DSE\Laboratorio\Desafio2_DSE_AV200751_MR200114\APIGateway\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\Manuel Araniva\Documents\Ciclo 02 2024\DSE\Laboratorio\Desafio2_DSE_AV200751_MR200114\APIGateway\bin\Debug\net8.0\IPAddressRange.dll
+C:\Users\Manuel Araniva\Documents\Ciclo 02 2024\DSE\Laboratorio\Desafio2_DSE_AV200751_MR200114\APIGateway\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Manuel Araniva\Documents\Ciclo 02 2024\DSE\Laboratorio\Desafio2_DSE_AV200751_MR200114\APIGateway\bin\Debug\net8.0\Microsoft.AspNetCore.MiddlewareAnalysis.dll
+C:\Users\Manuel Araniva\Documents\Ciclo 02 2024\DSE\Laboratorio\Desafio2_DSE_AV200751_MR200114\APIGateway\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Manuel Araniva\Documents\Ciclo 02 2024\DSE\Laboratorio\Desafio2_DSE_AV200751_MR200114\APIGateway\bin\Debug\net8.0\Microsoft.Extensions.DiagnosticAdapter.dll
+C:\Users\Manuel Araniva\Documents\Ciclo 02 2024\DSE\Laboratorio\Desafio2_DSE_AV200751_MR200114\APIGateway\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Manuel Araniva\Documents\Ciclo 02 2024\DSE\Laboratorio\Desafio2_DSE_AV200751_MR200114\APIGateway\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+C:\Users\Manuel Araniva\Documents\Ciclo 02 2024\DSE\Laboratorio\Desafio2_DSE_AV200751_MR200114\APIGateway\bin\Debug\net8.0\Ocelot.dll
+C:\Users\Manuel Araniva\Documents\Ciclo 02 2024\DSE\Laboratorio\Desafio2_DSE_AV200751_MR200114\APIGateway\obj\Debug\net8.0\APIGateway.csproj.AssemblyReference.cache
+C:\Users\Manuel Araniva\Documents\Ciclo 02 2024\DSE\Laboratorio\Desafio2_DSE_AV200751_MR200114\APIGateway\obj\Debug\net8.0\APIGateway.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Manuel Araniva\Documents\Ciclo 02 2024\DSE\Laboratorio\Desafio2_DSE_AV200751_MR200114\APIGateway\obj\Debug\net8.0\APIGateway.csproj.Up2Date

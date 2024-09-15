@@ -30,15 +30,15 @@ namespace APIUsuarios.Controllers
         public async Task<ActionResult<IEnumerable<UsuarioT>>> GetUsuariosT()
         {
 
-            var db = _redis.GetDatabase();
-            string cacheKey = "usuarioList";
-            var permisoCache = await db.StringGetAsync(cacheKey);
-            if (!permisoCache.IsNullOrEmpty)
-            {
-                return JsonSerializer.Deserialize<List<UsuarioT>>(permisoCache);
-            }
+            //var db = _redis.GetDatabase();
+            //string cacheKey = "usuarioList";
+            //var permisoCache = await db.StringGetAsync(cacheKey);
+            //if (!permisoCache.IsNullOrEmpty)
+            //{
+            //    return JsonSerializer.Deserialize<List<UsuarioT>>(permisoCache);
+            //}
             var usuarios = await _context.UsuariosT.ToListAsync();
-            await db.StringSetAsync(cacheKey, JsonSerializer.Serialize(usuarios), TimeSpan.FromMinutes(10));
+            //await db.StringSetAsync(cacheKey, JsonSerializer.Serialize(usuarios), TimeSpan.FromMinutes(10));
             return usuarios;
         }
 
