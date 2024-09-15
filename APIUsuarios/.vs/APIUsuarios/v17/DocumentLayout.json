@@ -27,7 +27,7 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 15,
+          "DockedWidth": 19,
           "SelectedChildIndex": 1,
           "Children": [
             {
@@ -50,7 +50,7 @@
               "RelativeDocumentMoniker": "Controllers\\PermisosController.cs",
               "ToolTip": "C:\\Users\\Manuel Araniva\\Documents\\Ciclo 02 2024\\DSE\\Laboratorio\\Desafio2_DSE_AV200751_MR200114\\APIUsuarios\\Controllers\\PermisosController.cs",
               "RelativeToolTip": "Controllers\\PermisosController.cs",
-              "ViewState": "AQIAAFwAAAAAAAAAAAAqwG4AAAA2AAAA",
+              "ViewState": "AQIAAJEAAAAAAAAAAAAAAJoAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-15T05:54:02.283Z",
               "EditorCaption": ""
@@ -78,7 +78,13 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-15T05:43:05.523Z"
-            },
+            }
+          ]
+        },
+        {
+          "DockedWidth": 11,
+          "SelectedChildIndex": 0,
+          "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -87,7 +93,7 @@
               "RelativeDocumentMoniker": "Controllers\\UsuariosController.cs",
               "ToolTip": "C:\\Users\\Manuel Araniva\\Documents\\Ciclo 02 2024\\DSE\\Laboratorio\\Desafio2_DSE_AV200751_MR200114\\APIUsuarios\\Controllers\\UsuariosController.cs",
               "RelativeToolTip": "Controllers\\UsuariosController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAACgAAAAuAAAA",
+              "ViewState": "AQIAACEAAAAAAAAAAAAYwCgAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-14T23:37:47.761Z",
               "EditorCaption": ""
