@@ -30,15 +30,15 @@ namespace APIUsuarios.Controllers
         public async Task<ActionResult<IEnumerable<UsuarioT>>> GetUsuariosT()
         {
 
-            //var db = _redis.GetDatabase();
-            //string cacheKey = "usuarioList";
-            //var permisoCache = await db.StringGetAsync(cacheKey);
-            //if (!permisoCache.IsNullOrEmpty)
-            //{
-            //    return JsonSerializer.Deserialize<List<UsuarioT>>(permisoCache);
-            //}
+            var db = _redis.GetDatabase();
+            string cacheKey = "usuarioList";
+            var permisoCache = await db.StringGetAsync(cacheKey);
+            if (!permisoCache.IsNullOrEmpty)
+            {
+                return JsonSerializer.Deserialize<List<UsuarioT>>(permisoCache);
+            }
             var usuarios = await _context.UsuariosT.ToListAsync();
-            //await db.StringSetAsync(cacheKey, JsonSerializer.Serialize(usuarios), TimeSpan.FromMinutes(10));
+            await db.StringSetAsync(cacheKey, JsonSerializer.Serialize(usuarios), TimeSpan.FromMinutes(10));
             return usuarios;
         }
 
@@ -87,6 +87,15 @@ namespace APIUsuarios.Controllers
 
             try
             {
+                if(_redis != null)
+                {
+                    await _context.SaveChangesAsync();
+                    var db = _redis.GetDatabase();
+                    string cacheKeyUsuario = "usuario_" + id.ToString();
+                    string cacheKeyList = "usuarioList";
+                    await db.KeyDeleteAsync(cacheKeyUsuario);
+                    await db.KeyDeleteAsync(cacheKeyList);
+                }
                 await _context.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)
@@ -109,6 +118,15 @@ namespace APIUsuarios.Controllers
         [HttpPost]
         public async Task<ActionResult<UsuarioT>> PostUsuarioT(UsuarioT usuarioT)
         {
+            if(_redis != null)
+            {
+                _context.UsuariosT.Add(usuarioT);
+                await _context.SaveChangesAsync();
+                var db = _redis.GetDatabase();
+                string cacheKeyList = "usuarioList";
+                await db.KeyDeleteAsync(cacheKeyList);
+                return CreatedAtAction("GetUsuarioT", new { id = usuarioT.UsuarioId }, usuarioT);
+            }
             // Validar el campo Nombre
             if (string.IsNullOrEmpty(usuarioT.Nombre) || usuarioT.Nombre.Length < 3 || usuarioT.Nombre.Length > 50)
             {
@@ -141,6 +159,18 @@ namespace APIUsuarios.Controllers
             if (usuarioT == null)
             {
                 return NotFound();
+            }
+
+            if(_redis != null)
+            {
+                _context.UsuariosT.Remove(usuarioT);
+                await _context.SaveChangesAsync();
+                var db = _redis.GetDatabase();
+                string cacheKeyUsuario = "usuario_" + id.ToString();
+                string cacheKeyList = "usuarioList";
+                await db.KeyDeleteAsync(cacheKeyUsuario);
+                await db.KeyDeleteAsync(cacheKeyList);
+                return NoContent();
             }
 
             _context.UsuariosT.Remove(usuarioT);
