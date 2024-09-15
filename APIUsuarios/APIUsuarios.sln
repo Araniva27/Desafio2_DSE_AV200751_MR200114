@@ -5,7 +5,9 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIUsuarios", "APIUsuarios.csproj", "{D9697B10-7751-4BCE-83BA-09FBE243B5FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIUsuarios.Test2", "..\APIUsuarios.Test2\APIUsuarios.Test2.csproj", "{1090B596-61F4-4F2E-9988-EC77FADD6BFC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIUsuarios.Test2", "..\APIUsuarios.Test2\APIUsuarios.Test2.csproj", "{1090B596-61F4-4F2E-9988-EC77FADD6BFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APIGateway", "..\APIGateway\APIGateway.csproj", "{B809E59E-4E81-4B77-A8D1-EB8C5A77B0AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{1090B596-61F4-4F2E-9988-EC77FADD6BFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1090B596-61F4-4F2E-9988-EC77FADD6BFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1090B596-61F4-4F2E-9988-EC77FADD6BFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B809E59E-4E81-4B77-A8D1-EB8C5A77B0AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B809E59E-4E81-4B77-A8D1-EB8C5A77B0AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B809E59E-4E81-4B77-A8D1-EB8C5A77B0AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B809E59E-4E81-4B77-A8D1-EB8C5A77B0AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
