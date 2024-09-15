@@ -86,6 +86,15 @@ namespace APIUsuarios.Controllers
 
             try
             {
+                if(_redis != null)
+                {
+                    await _context.SaveChangesAsync();
+                    var db = _redis.GetDatabase();
+                    string cacheKeyRol = "rol_" + id.ToString();
+                    string cacheKeyList = "rolList";
+                    await db.KeyDeleteAsync(cacheKeyRol);
+                    await db.KeyDeleteAsync(cacheKeyList);
+                }
                 await _context.SaveChangesAsync();
             }
             catch (DbUpdateConcurrencyException)
@@ -108,6 +117,20 @@ namespace APIUsuarios.Controllers
         [HttpPost]
         public async Task<ActionResult<RolT>> PostRolT(RolT rolT)
         {
+            if(_redis != null)
+            {
+                _context.RolesT.Add(rolT);
+                await _context.SaveChangesAsync();
+                var db = _redis.GetDatabase();
+                string cacheKeyList = "rolList";
+                await db.KeyDeleteAsync(cacheKeyList);
+                return CreatedAtAction("GetRolT", new { id = rolT.RolId }, rolT);
+            }
+
+            if (string.IsNullOrEmpty(rolT.Nombre) || rolT.Nombre.Length < 3 || rolT.Nombre.Length > 30)
+            {
+                return BadRequest("El nombre es obligatorio y debe tener entre 3 y 30 caracteres.");
+            }
             _context.RolesT.Add(rolT);
             await _context.SaveChangesAsync();
 
@@ -122,6 +145,18 @@ namespace APIUsuarios.Controllers
             if (rolT == null)
             {
                 return NotFound();
+            }
+
+            if(_redis != null)
+            {
+                _context.RolesT.Remove(rolT);
+                await _context.SaveChangesAsync();
+                var db = _redis.GetDatabase();
+                string cacheKeyRol = "rol_" + id.ToString();
+                string cacheKeyList = "rolList";
+                await db.KeyDeleteAsync(cacheKeyRol);
+                await db.KeyDeleteAsync(cacheKeyList);
+                return NoContent();
             }
 
             _context.RolesT.Remove(rolT);

@@ -40,7 +40,10 @@ namespace APIUsuarios.Test2
             var result = await controller.PostRolT(nuevoRol);
 
             //Assert
-            Assert.IsType<CreatedAtActionResult>(result.Result);
+            var badRequestResult = Assert.IsType<BadRequestObjectResult>(result.Result);
+            Assert.Equal(400, badRequestResult.StatusCode);
+            Assert.Equal("El nombre es obligatorio y debe tener entre 3 y 30 caracteres.", badRequestResult.Value);
+            //Assert.IsType<CreatedAtActionResult>(result.Result);
         }
 
         [Fact]

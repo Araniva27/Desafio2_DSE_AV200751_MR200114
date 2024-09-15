@@ -3,8 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\Manuel Araniva\\Documents\\Ciclo 02 2024\\DSE\\Laboratorio\\Desafio2_DSE_AV200751_MR200114\\APIUsuarios\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D9697B10-7751-4BCE-83BA-09FBE243B5FE}|APIUsuarios.csproj|c:\\users\\manuel araniva\\documents\\ciclo 02 2024\\dse\\laboratorio\\desafio2_dse_av200751_mr200114\\apiusuarios\\controllers\\permisoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D9697B10-7751-4BCE-83BA-09FBE243B5FE}|APIUsuarios.csproj|solutionrelative:controllers\\permisoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1090B596-61F4-4F2E-9988-EC77FADD6BFC}|..\\APIUsuarios.Test2\\APIUsuarios.Test2.csproj|c:\\users\\manuel araniva\\documents\\ciclo 02 2024\\dse\\laboratorio\\desafio2_dse_av200751_mr200114\\apiusuarios.test2\\rolescontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1090B596-61F4-4F2E-9988-EC77FADD6BFC}|..\\APIUsuarios.Test2\\APIUsuarios.Test2.csproj|c:\\users\\manuel araniva\\documents\\ciclo 02 2024\\dse\\laboratorio\\desafio2_dse_av200751_mr200114\\apiusuarios.test2\\usuarioscontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D9697B10-7751-4BCE-83BA-09FBE243B5FE}|APIUsuarios.csproj|c:\\users\\manuel araniva\\documents\\ciclo 02 2024\\dse\\laboratorio\\desafio2_dse_av200751_mr200114\\apiusuarios\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,6 +15,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{D9697B10-7751-4BCE-83BA-09FBE243B5FE}|APIUsuarios.csproj|c:\\users\\manuel araniva\\documents\\ciclo 02 2024\\dse\\laboratorio\\desafio2_dse_av200751_mr200114\\apiusuarios\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D9697B10-7751-4BCE-83BA-09FBE243B5FE}|APIUsuarios.csproj|solutionrelative:controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D9697B10-7751-4BCE-83BA-09FBE243B5FE}|APIUsuarios.csproj|c:\\users\\manuel araniva\\documents\\ciclo 02 2024\\dse\\laboratorio\\desafio2_dse_av200751_mr200114\\apiusuarios\\controllers\\permisoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D9697B10-7751-4BCE-83BA-09FBE243B5FE}|APIUsuarios.csproj|solutionrelative:controllers\\permisoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B809E59E-4E81-4B77-A8D1-EB8C5A77B0AD}|..\\APIGateway\\APIGateway.csproj|c:\\users\\manuel araniva\\documents\\ciclo 02 2024\\dse\\laboratorio\\desafio2_dse_av200751_mr200114\\apigateway\\ocelot.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
@@ -33,6 +39,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "RolesControllerTest.cs",
+              "DocumentMoniker": "C:\\Users\\Manuel Araniva\\Documents\\Ciclo 02 2024\\DSE\\Laboratorio\\Desafio2_DSE_AV200751_MR200114\\APIUsuarios.Test2\\RolesControllerTest.cs",
+              "RelativeDocumentMoniker": "..\\APIUsuarios.Test2\\RolesControllerTest.cs",
+              "ToolTip": "C:\\Users\\Manuel Araniva\\Documents\\Ciclo 02 2024\\DSE\\Laboratorio\\Desafio2_DSE_AV200751_MR200114\\APIUsuarios.Test2\\RolesControllerTest.cs",
+              "RelativeToolTip": "..\\APIUsuarios.Test2\\RolesControllerTest.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAA/wB4AAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T22:46:12.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UsuariosControllerTest.cs",
+              "DocumentMoniker": "C:\\Users\\Manuel Araniva\\Documents\\Ciclo 02 2024\\DSE\\Laboratorio\\Desafio2_DSE_AV200751_MR200114\\APIUsuarios.Test2\\UsuariosControllerTest.cs",
+              "RelativeDocumentMoniker": "..\\APIUsuarios.Test2\\UsuariosControllerTest.cs",
+              "ToolTip": "C:\\Users\\Manuel Araniva\\Documents\\Ciclo 02 2024\\DSE\\Laboratorio\\Desafio2_DSE_AV200751_MR200114\\APIUsuarios.Test2\\UsuariosControllerTest.cs",
+              "RelativeToolTip": "..\\APIUsuarios.Test2\\UsuariosControllerTest.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAQwD0AAABzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-15T22:46:36.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\Manuel Araniva\\Documents\\Ciclo 02 2024\\DSE\\Laboratorio\\Desafio2_DSE_AV200751_MR200114\\APIUsuarios\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsuariosController.cs",
+              "ToolTip": "C:\\Users\\Manuel Araniva\\Documents\\Ciclo 02 2024\\DSE\\Laboratorio\\Desafio2_DSE_AV200751_MR200114\\APIUsuarios\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "Controllers\\UsuariosController.cs",
+              "ViewState": "AQIAAJQAAAAAAAAAAAAQwKUAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-14T23:37:47.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "PermisosController.cs",
               "DocumentMoniker": "C:\\Users\\Manuel Araniva\\Documents\\Ciclo 02 2024\\DSE\\Laboratorio\\Desafio2_DSE_AV200751_MR200114\\APIUsuarios\\Controllers\\PermisosController.cs",
               "RelativeDocumentMoniker": "Controllers\\PermisosController.cs",
@@ -45,33 +90,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UsuariosController.cs",
-              "DocumentMoniker": "C:\\Users\\Manuel Araniva\\Documents\\Ciclo 02 2024\\DSE\\Laboratorio\\Desafio2_DSE_AV200751_MR200114\\APIUsuarios\\Controllers\\UsuariosController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UsuariosController.cs",
-              "ToolTip": "C:\\Users\\Manuel Araniva\\Documents\\Ciclo 02 2024\\DSE\\Laboratorio\\Desafio2_DSE_AV200751_MR200114\\APIUsuarios\\Controllers\\UsuariosController.cs",
-              "RelativeToolTip": "Controllers\\UsuariosController.cs",
-              "ViewState": "AQIAAEsAAAAAAAAAAAAAAKoAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-14T23:37:47.761Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "RolesController.cs",
               "DocumentMoniker": "C:\\Users\\Manuel Araniva\\Documents\\Ciclo 02 2024\\DSE\\Laboratorio\\Desafio2_DSE_AV200751_MR200114\\APIUsuarios\\Controllers\\RolesController.cs",
               "RelativeDocumentMoniker": "Controllers\\RolesController.cs",
               "ToolTip": "C:\\Users\\Manuel Araniva\\Documents\\Ciclo 02 2024\\DSE\\Laboratorio\\Desafio2_DSE_AV200751_MR200114\\APIUsuarios\\Controllers\\RolesController.cs",
               "RelativeToolTip": "Controllers\\RolesController.cs",
-              "ViewState": "AQIAAF0AAAAAAAAAAAAuwIMAAAAAAAAA",
+              "ViewState": "AQIAAJcAAAAAAAAAAAAmwJ0AAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-15T05:54:07.275Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "ocelot.json",
               "DocumentMoniker": "C:\\Users\\Manuel Araniva\\Documents\\Ciclo 02 2024\\DSE\\Laboratorio\\Desafio2_DSE_AV200751_MR200114\\APIGateway\\ocelot.json",
               "RelativeDocumentMoniker": "..\\APIGateway\\ocelot.json",
@@ -83,7 +115,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Manuel Araniva\\Documents\\Ciclo 02 2024\\DSE\\Laboratorio\\Desafio2_DSE_AV200751_MR200114\\APIGateway\\Program.cs",
               "RelativeDocumentMoniker": "..\\APIGateway\\Program.cs",
