@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace APIUsuarios.Models
 {
@@ -12,7 +13,8 @@ namespace APIUsuarios.Models
         public string Nombre { get; set; }
 
         public string? Descripcion { get; set; }
-        
-        public ICollection<UsuarioT> Usuarios { get; set; }
+
+        [JsonIgnore]
+        public ICollection<UsuarioT>? Usuarios { get; set; } 
     }
 }

@@ -25,7 +25,12 @@ builder.Services.AddSingleton<IConnectionMultiplexer>(sp =>
     var configuration = ConfigurationOptions.Parse(builder.Configuration.GetConnectionString("redis"), true);
     return ConnectionMultiplexer.Connect(configuration);
 });
-
+builder.Services.AddControllers()
+    .AddJsonOptions(opts =>
+    {
+        opts.JsonSerializerOptions.WriteIndented = true;
+        opts.JsonSerializerOptions.PropertyNamingPolicy = null; // Si prefieres nombres de propiedades sin cambiar
+    });
 builder.Services.AddOutputCache();
 var app = builder.Build();
 

@@ -268,3 +268,4 @@ C:\Users\Manuel Araniva\Documents\Ciclo 02 2024\DSE\Laboratorio\Desafio2_DSE_AV2
 C:\Users\Manuel Araniva\Documents\Ciclo 02 2024\DSE\Laboratorio\Desafio2_DSE_AV200751_MR200114\APIUsuarios\bin\Debug\net8.0\OpenTelemetry.Extensions.Hosting.dll
 C:\Users\Manuel Araniva\Documents\Ciclo 02 2024\DSE\Laboratorio\Desafio2_DSE_AV200751_MR200114\APIUsuarios\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
 C:\Users\Manuel Araniva\Documents\Ciclo 02 2024\DSE\Laboratorio\Desafio2_DSE_AV200751_MR200114\APIUsuarios\bin\Debug\net8.0\StackExchange.Redis.dll
+C:\Users\Manuel Araniva\Documents\Ciclo 02 2024\DSE\Laboratorio\Desafio2_DSE_AV200751_MR200114\APIUsuarios\obj\Debug\net8.0\APIUsuarios.sourcelink.json

@@ -345,3 +345,4 @@ C:\Users\Manuel Araniva\Documents\Ciclo 02 2024\DSE\Laboratorio\Desafio2_DSE_AV2
 C:\Users\Manuel Araniva\Documents\Ciclo 02 2024\DSE\Laboratorio\Desafio2_DSE_AV200751_MR200114\APIUsuarios.Test2\obj\Debug\net8.0\APIUsuarios.Test2.pdb
 C:\Users\Manuel Araniva\Documents\Ciclo 02 2024\DSE\Laboratorio\Desafio2_DSE_AV200751_MR200114\APIUsuarios.Test2\obj\Debug\net8.0\APIUsuarios.Test2.genruntimeconfig.cache
 C:\Users\Manuel Araniva\Documents\Ciclo 02 2024\DSE\Laboratorio\Desafio2_DSE_AV200751_MR200114\APIUsuarios.Test2\obj\Debug\net8.0\ref\APIUsuarios.Test2.dll
+C:\Users\Manuel Araniva\Documents\Ciclo 02 2024\DSE\Laboratorio\Desafio2_DSE_AV200751_MR200114\APIUsuarios.Test2\obj\Debug\net8.0\APIUsuarios.Test2.sourcelink.json

@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace APIUsuarios.Models
 {
@@ -22,6 +23,8 @@ namespace APIUsuarios.Models
         
         [ForeignKey("Rol")]
         public int RolId { get; set; }
-        public RolT Rol { get; set; }
+        
+        [JsonIgnore]
+        public virtual RolT? Rol { get; set; }
     }
 }

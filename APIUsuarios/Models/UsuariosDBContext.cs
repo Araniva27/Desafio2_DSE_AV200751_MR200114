@@ -9,12 +9,16 @@ namespace APIUsuarios.Models
         {
         }
 
-        public DbSet<UsuarioT> UsuariosT { get; set; } = null;
-        public DbSet<RolT> RolesT { get; set; } = null;
-        public DbSet<PermisoT> PermisosT { get; set; } = null;
+        public DbSet<UsuarioT> UsuariosT { get; set; } 
+        public DbSet<RolT> RolesT { get; set; } 
+        public DbSet<PermisoT> PermisosT { get; set; } 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+            //modelBuilder.Entity<UsuarioT>()
+            //        .HasOne(u => u.Rol)  
+            //        .WithMany(r => r.Usuarios)
+            //        .HasForeignKey(u => u.RolId);
         }
     }
 }
