@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using APIUsuarios.Models;
 using StackExchange.Redis;
 using System.Text.Json;
+using System.Text.RegularExpressions;
 
 namespace APIUsuarios.Controllers
 {
@@ -108,10 +109,28 @@ namespace APIUsuarios.Controllers
         [HttpPost]
         public async Task<ActionResult<UsuarioT>> PostUsuarioT(UsuarioT usuarioT)
         {
+            // Validar el campo Nombre
+            if (string.IsNullOrEmpty(usuarioT.Nombre) || usuarioT.Nombre.Length < 3 || usuarioT.Nombre.Length > 50)
+            {
+                return BadRequest("El nombre es obligatorio y debe tener entre 3 y 50 caracteres.");
+            }
+
+            // Validar el campo Email
+            if (string.IsNullOrEmpty(usuarioT.Email) || !IsValidEmail(usuarioT.Email))
+            {
+                return BadRequest("El email es obligatorio y debe tener un formato válido.");
+            }
+
+            // Validar el campo Contraseña
+            if (string.IsNullOrEmpty(usuarioT.Contraseña) || usuarioT.Contraseña.Length < 8)
+            {
+                return BadRequest("La contraseña es obligatoria y debe tener al menos 8 caracteres.");
+            }
+
             _context.UsuariosT.Add(usuarioT);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetUsuarioT", new { id = usuarioT.UsuarioId }, usuarioT);
+            return CreatedAtAction(nameof(GetUsuarioT), new { id = usuarioT.UsuarioId }, usuarioT);
         }
 
         // DELETE: api/Usuarios/5
@@ -133,6 +152,15 @@ namespace APIUsuarios.Controllers
         private bool UsuarioTExists(int id)
         {
             return _context.UsuariosT.Any(e => e.UsuarioId == id);
+        }
+
+        private bool IsValidEmail(string email)
+        {
+            // Expresión regular para validar un correo electrónico
+            string emailPattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
+
+            // Validar el correo utilizando Regex
+            return Regex.IsMatch(email, emailPattern);
         }
     }
 }
