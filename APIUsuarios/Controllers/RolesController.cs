@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using APIUsuarios.Models;
+using StackExchange.Redis;
+using System.Text.Json;
 
 namespace APIUsuarios.Controllers
 {
@@ -14,28 +16,57 @@ namespace APIUsuarios.Controllers
     public class RolesController : ControllerBase
     {
         private readonly UsuariosDBContext _context;
-
-        public RolesController(UsuariosDBContext context)
+        private readonly IConnectionMultiplexer _redis;
+        public RolesController(UsuariosDBContext context, IConnectionMultiplexer? redis = null)
         {
             _context = context;
+            _redis = redis;
         }
 
         // GET: api/Roles
         [HttpGet]
         public async Task<ActionResult<IEnumerable<RolT>>> GetRolesT()
         {
-            return await _context.RolesT.ToListAsync();
+            var db = _redis.GetDatabase();
+            string cacheKey = "rolList";
+            var rolCache = await db.StringGetAsync(cacheKey);
+            if (!rolCache.IsNullOrEmpty)
+            {
+                return JsonSerializer.Deserialize<List<RolT>>(rolCache);
+            }
+            var roles = await _context.RolesT.ToListAsync();
+            await db.StringSetAsync(cacheKey, JsonSerializer.Serialize(roles), TimeSpan.FromMinutes(10));
+            return roles;
         }
 
         // GET: api/Roles/5
         [HttpGet("{id}")]
         public async Task<ActionResult<RolT>> GetRolT(int id)
         {
+            if (_redis != null)
+            {
+                var db = _redis.GetDatabase();
+                string cacheKey = "rol_" + id.ToString();
+                var rolCache = await db.StringGetAsync(cacheKey);
+                if (!rolCache.IsNullOrEmpty)
+                {
+                    return JsonSerializer.Deserialize<RolT>(rolCache);
+                }
+
+            }
+
             var rolT = await _context.RolesT.FindAsync(id);
 
             if (rolT == null)
             {
                 return NotFound();
+            }
+
+            // Si Redis está configurado, almacenar en caché el permiso
+            if (_redis != null)
+            {
+                var db = _redis.GetDatabase();
+                await db.StringSetAsync("rol_" + id.ToString(), JsonSerializer.Serialize(rolT), TimeSpan.FromMinutes(10));
             }
 
             return rolT;
